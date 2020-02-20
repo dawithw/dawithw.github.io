@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <title>Dawit's Page</title>
     <link href="style.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="script.js"></script>
+    <script> 
+        $(function(){
+          $("#includedContent").load("../FCC/Design Implementation/index.html"); 
+        });
+    </script> 
 </head>
 
 <body>
     <h1 id="title">Title</h1>
-    <p id="content">Content</p>
+    <p id="includedContent">Content</p>
     <button id="button">Test</button>
 </body>
 
