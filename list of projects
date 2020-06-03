@@ -1,0 +1,33 @@
+Java - Text Adventure
+- Simple text adventure game using Java
+
+C++ - Dinner Plans (Cookbook)
+- A recipe creator application that takes XHTML formatted recipie files and produce recipe
+	- Automatic unit conversion
+	- Inventory tracking/Shopping list creator
+
+ASD - Banking Framework
+- Custom built framework in Java for banking system
+- Needs a front-end to implement the framework
+
+WAA/EA - Combine Spring Boot/Hibernate to make attendance system
+
+MWA - Investment application (?)
+	- Simple sell and buy shares of a small business.
+	- Can be done using microservices
+
+
+Potential (Extra Credit)
+- Visual Data Structure/Algo with HTML/CSS/JS
+
+
+
+Notes: 
+
+Each project is an article
+
+The page is a section
+	- Header is Projects
+
+Aricles contained in a div to create slideshow
+

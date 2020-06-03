@@ -2,63 +2,170 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="Dawit Woldegiorgis is a software engineer with extensive background">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
   <title>Dawit Woldegiorgis</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <!-- class for styling selector -->
 <body>
-  <div class="container">
-    <div class="page">
-      <header>
-        <nav>
-          <div class="logo">D</div>
-          <div class="menu">
-            <div class="icon hide-desktop">
-              <p></p>
-              <p></p>
-              <p></p>
-            </div>
-            <ul class="main-menu no-list hide-mobile">
-              <li class="highlight-on-hover">Home</li>
-              <li class="highlight-on-hover">About Me</li>
-              <li class="highlight-on-hover">Projects</li>
-              <li class="highlight-on-hover">Contact</li>
-            </ul>
-            <ul class="social-media no-list hide-mobile">
-              <li><a href="">Linkedin</a></li>
-              <li><a href="">Github</a></li>
-              <li><a href="">Email</a></li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-      <section>
-        <p class="greeting hide-mobile">Hello</h1>
-        <div class="hero">
-          <h1>Dawit Woldegiorgis</h1>
-          <p>I am a software engineer interested in developing highly scalable performant systems. I also enjoy building interactive applications that deliver exceptional user experience. Recently, I have been working on developing web applications with enterpise level backend services.</p>
-          <div class="tech">
-            <p>Some of the technologies I have been using recently</p>
-            <ul class= "no-list">
-              <li><img class="logo" alt="java" src="/images/java.svg"></li>
-              <li><img class="logo" alt="spring" src="/images/spring.svg"></li>
-              <li><img class="logo" alt="mysql" src="/images/mysql.svg"></li>
-              <li><img class="logo" alt="angular" src="/images/angular.svg"></li>
-              <li><img class="logo" alt="nodejs" src="/images/nodejs.svg"></li>
-              <li><img class="logo" alt="mongodb-logo" src="/images/mongodb.svg"></li>
-            </ul>
-          </div>
+  <header class="sticky">
+    <nav>
+      <p class="main-logo menu-heading">D</p>
+      <div class="main-menu">
+        <!-- for creating -->
+        <div class="hamburger-icon hide-desktop">
+          <p></p>
+          <p></p>
+          <p></p>
         </div>
+        <div class="links">
+          <ul class="nav-list no-list hide-mobile">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <ul class="social-media no-list hide-mobile">
+            <li><a href="http://linkedin.com/in/dawithwoldegiorgis/"><svg xmlns="http://www.w3.org/2000/svg" width="37.781" height="37.781" viewBox="0 0 37.781 37.781"><path d="M35.082,2.25H2.69A2.71,2.71,0,0,0,0,4.974V37.307a2.71,2.71,0,0,0,2.69,2.724H35.082a2.717,2.717,0,0,0,2.7-2.724V4.974A2.717,2.717,0,0,0,35.082,2.25ZM11.419,34.634h-5.6V16.6h5.608v18.03Zm-2.8-20.493a3.247,3.247,0,1,1,3.247-3.247A3.248,3.248,0,0,1,8.619,14.141Zm23.79,20.493h-5.6V25.863c0-2.091-.042-4.782-2.909-4.782-2.918,0-3.365,2.277-3.365,4.63v8.922h-5.6V16.6h5.372v2.463h.076a5.9,5.9,0,0,1,5.3-2.909c5.667,0,6.721,3.736,6.721,8.594Z" transform="translate(0 -2.25)" fill="#e2e2e2"/></svg></a></li>
+            <li><a href="https://github.com/dawithw"><svg xmlns="http://www.w3.org/2000/svg" width="37.781" height="36.837" viewBox="0 0 37.781 36.837"><path d="M12.637,30.224c0,.152-.175.274-.4.274-.251.023-.427-.1-.427-.274,0-.152.175-.274.4-.274C12.439,29.927,12.637,30.049,12.637,30.224Zm-2.369-.343c-.053.152.1.328.328.373a.357.357,0,0,0,.472-.152c.046-.152-.1-.328-.328-.4A.391.391,0,0,0,10.268,29.881Zm3.367-.129c-.221.053-.373.2-.35.373.023.152.221.251.449.2s.373-.2.35-.35S13.856,29.729,13.635,29.751ZM18.647.563A18.265,18.265,0,0,0,0,19.148a19.1,19.1,0,0,0,12.911,18.22c.975.175,1.318-.427,1.318-.922,0-.472-.023-3.077-.023-4.677,0,0-5.332,1.143-6.452-2.27,0,0-.868-2.217-2.118-2.788,0,0-1.744-1.2.122-1.173A4.021,4.021,0,0,1,8.7,27.5,4.027,4.027,0,0,0,14.252,29.1a4.234,4.234,0,0,1,1.219-2.567c-4.258-.472-8.554-1.089-8.554-8.417a5.773,5.773,0,0,1,1.8-4.487,7.2,7.2,0,0,1,.2-5.172c1.592-.5,5.256,2.057,5.256,2.057a17.995,17.995,0,0,1,9.567,0S27.4,7.951,28.991,8.454a7.193,7.193,0,0,1,.2,5.172,5.921,5.921,0,0,1,1.965,4.487c0,7.351-4.487,7.937-8.744,8.417A4.5,4.5,0,0,1,23.7,30.064c0,2.567-.023,5.743-.023,6.368,0,.5.35,1.1,1.318.922A18.921,18.921,0,0,0,37.781,19.148C37.781,8.583,29.212.563,18.647.563ZM7.4,26.834c-.1.076-.076.251.053.4.122.122.3.175.4.076.1-.076.076-.251-.053-.4C7.678,26.788,7.5,26.735,7.4,26.834Zm-.823-.617c-.053.1.023.221.175.3a.227.227,0,0,0,.328-.053c.053-.1-.023-.221-.175-.3C6.756,26.118,6.635,26.141,6.581,26.217Zm2.468,2.712c-.122.1-.076.328.1.472.175.175.4.2.5.076.1-.1.053-.328-.1-.472C9.377,28.83,9.148,28.807,9.049,28.929Zm-.868-1.12c-.122.076-.122.274,0,.449s.328.251.427.175a.347.347,0,0,0,0-.472C8.5,27.786,8.3,27.71,8.181,27.809Z" transform="translate(0 -0.563)" fill="#e2e2e2"/></svg></a></li>
+            <li><a href="mailto:dawithwoldegiorgis@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" width="46.229" height="31.206" viewBox="0 0 46.229 31.206"><path d="M.072,32.51V6.832q0-.045.134-.847L15.318,18.913.25,33.4a3.778,3.778,0,0,1-.178-.892ZM2.078,4.2a1.921,1.921,0,0,1,.758-.134h40.7a2.524,2.524,0,0,1,.8.134L29.183,17.174l-2.006,1.6-3.968,3.254-3.968-3.254-2.006-1.6ZM2.123,35.14l15.2-14.578,5.885,4.77,5.885-4.77L44.3,35.14a2.14,2.14,0,0,1-.758.134H2.836a2.019,2.019,0,0,1-.713-.134ZM31.1,18.913,46.168,5.985a2.661,2.661,0,0,1,.134.847V32.51a3.417,3.417,0,0,1-.134.892Z" transform="translate(-0.072 -4.068)" fill="#fff"/></svg></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="main-container">
+    <section id="home" class="home page active">
+      <div class="greeting">
+        <p class="desktop">Hello. I am</p>
+        <p class="mobile">Hi. I'm</p>
+      </div>
+      <div class="main">
+        <h1 id="name">Dawit Woldegiorgis</h1>
+        <p class="description">I am a software engineer with background in web and desktop application, along with systems development</p>
+        <hr>
+        <p>Some of the technologies I have used recently:</p>
+        <ul class= "technologies icons no-list">
+          <li><a href=""><img alt="java-icon" src="/images/icons/java.svg"></a></li>
+          <li><a href=""></a><img alt="spring-icon" src="/images/icons/spring.svg"></a></li>
+          <li><a href=""></a><img alt="mysql-icon" src="/images/icons/mysql.svg"></a></li>
+          <li><a href=""></a><img alt="angular-icon" src="/images/icons/angular.svg"></a></li>
+          <li><a href=""></a><img alt="nodejs-icon" src="/images/icons/nodejs.svg"></a></li>
+          <li><a href=""></a><img alt="mongodb-icon" src="/images/icons/mongodb.svg"></a></li>
+        </ul>
         <div class="button">
           <p>Contact Me</p>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
+    <section id="about-me" class="about-me page">
+      <h1>About me</h1>
+      <div class="image">
+        <img class="profile-picture" src="/images/profile.png">
+      </div>
+      <div class="text">
+        <p>
+          I graduated with my Bachelors in Biology from the University of Florida.
+          <span id="detail-arrow-1" class="arrow"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="300" viewBox="0 0 300 300"><defs><clipPath id="a"><rect width="296" height="264"/></clipPath><clipPath id="c"><rect width="300" height="300"/></clipPath></defs><g id="b" clip-path="url(#c)"><g transform="translate(2 18)" clip-path="url(#a)"><path d="M139.136,0,278.272,213.953,139.136,85.385,0,213.953Z" transform="translate(287.136 238.977) rotate(180)" fill="#434343"/></g></g></svg></span>
+          <span id="detail-1" class="detail hide">
+            It was during this time I got introduced to the world of computer science. 
+            Having taken my first programming course, I was deeply intrigued and excited. 
+            I decided to learn more, so I added it as my minor.
+          </span>
+        </p>        
+        </p>
+          Please don't lie!!!! Working in a business, however, was more rewarding that I expected.
+          <span id="detail-arrow-2" class="arrow"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="300" viewBox="0 0 300 300"><defs><clipPath id="a"><rect width="296" height="264"/></clipPath><clipPath id="c"><rect width="300" height="300"/></clipPath></defs><g id="b" clip-path="url(#c)"><g transform="translate(2 18)" clip-path="url(#a)"><path d="M139.136,0,278.272,213.953,139.136,85.385,0,213.953Z" transform="translate(287.136 238.977) rotate(180)" fill="#434343"/></g></g></svg></span>
+          <span id="detail-2" class="detail hide">
+            It gave me a great insight into how to handle working in teams, understanding different personalities and improving my accountability.
+            During this time, I kept working on learning and developing apps.
+            The more I spent time doing that, the clearer it became to me where I wanted my life to head. I found my passion. 
+          </span>
+        </p>
+        <p>
+          I enrolled for my masters to get a little bit more formal education before diving into the industry. 
+          <span id="detail-arrow-3" class="arrow"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="300" viewBox="0 0 300 300"><defs><clipPath id="a"><rect width="296" height="264"/></clipPath><clipPath id="c"><rect width="300" height="300"/></clipPath></defs><g id="b" clip-path="url(#c)"><g transform="translate(2 18)" clip-path="url(#a)"><path d="M139.136,0,278.272,213.953,139.136,85.385,0,213.953Z" transform="translate(287.136 238.977) rotate(180)" fill="#434343"/></g></g></svg></span>
+          <span id="detail-3" class="detail 1 hide">
+            I learnt about design and architecture of enterprise systems, building interactive web applications, and writing clean testable code to streamline the software development process.
+          </span>
+        </p>
+        <p>This is where my real journey begins.</p> 
+      </div>
+    </section>
+    <section id="projects" class="projects page">
+      <h1>Projects</h1>
+      <h2>Selected projects I have completed for my courses</h2>
+      <div>
+        <article id="text-adventure">
+          <h2>Text Adventure</h2>
+          <img src="#" alt="text-adventure-logo">
+          <p class="description">A simple console based adventure game implemented in Java. Online demo is re-implemented in Javascript</p>
+          <section class="technologies">
+            <h3>Technologies Used</h3>
+            <img src="#" alt="java-icon">
+            <img src="#" alt="html-css-js-icon">
+          </section>
+        </article>
+        <article id="dinner-plans">
+          <h2>Dinner Plans</h2>
+          <img src="#" alt="cookbook-logo">
+          <p class="description">A a digital cookbook that reads, formats and stores recipes. Using the information in the recipie, it creates an inventory of ingredients and equipments used. Users can add their available ingredients and equipments to get a comprehensive shopping list for missing items. <a href="#">Originally implemented in C++</a></p>
+          <section class="technologies">
+            <h3>Technologies Used</h3>
+            <img src="#" alt="c++-icon">
+            <img src="#" alt="html-css-js-icon">
+          </section>
+        </article>
+        <article id="finco">
+          <h2>FinCo</h2>
+          <img src="#" alt="bank-logo">
+          <p class="description">This is a custom built financial framework in Java. It has both desktop and web application interfaces</p>
+          <section class="technologies">
+            <h3>Technologies Used</h3>
+            <img src="#" alt="java-icon">
+            <img src="#" alt="html-css-js-icon">
+          </section>
+        </article>
+        <article id="attendance-system">
+          <h2>Attendance System</h2>
+          <img src="#" alt="attendance-logo">
+          <p class="description">This application reads, stores and generates attendace reports. It is implemented for keeping record of meditation attendance, but it can be extended to use for any other kinds of attendance.</p>
+          <section class="technologies">
+            <h3>Technologies Used</h3>
+            <img src="#" alt="spring-icon">
+            <img src="#" alt="angular-icon">
+            <img src="#" alt="mysql-icon">
+          </section>
+        </article>
+        <article id="investment-management">
+          <h2>Investment Management</h2>
+          <img src="#" alt="investment-logo">
+          <p class="description">A simple e-commerce kind of application for buying and selling small business stocks.</p>
+          <section class="technologies">
+            <h3>Technologies Used</h3>
+            <img src="#" alt="angular-icon">
+            <img src="#" alt="node-icon">
+            <img src="#" alt="mongodb-icon">
+          </section>
+        </article>
+      </div>
+
+    </section>
+    <section class="page name">
+      <h1>Section title</h1>
+      <div>
+        Group contents
+      </div>
+      <div>
+        other group contents
+      </div>
+    </section>
+
     <footer>
-      
+      <!-- stuff at the bottom of page -->
     </footer>
-  </div>
+  </main>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/script.js"></script>
 </body>
