@@ -9,17 +9,17 @@
 </head>
 <!-- class for styling selector -->
 <body>
-  <header class="sticky">
+  <header>
     <nav>
-      <p class="main-logo menu-heading">D</p>
+      <img class="main-logo" src="images/logo.svg" alt="logo">
       <div class="main-menu">
         <!-- for creating -->
         <div class="hamburger-icon hide-desktop">
-          <p></p>
-          <p></p>
-          <p></p>
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
-        <div class="links">
+        <div class="page-links">
           <ul class="nav-list no-list hide-mobile">
             <li><a href="#home">Home</a></li>
             <li><a href="#about-me">About Me</a></li>
@@ -37,61 +37,62 @@
   </header>
   <main class="main-container">
     <section id="home" class="home page active">
-      <div class="greeting">
-        <p class="desktop">Hello. I am</p>
-        <p class="mobile">Hi. I'm</p>
-      </div>
       <div class="main">
-        <h1 id="name">Dawit Woldegiorgis</h1>
-        <p class="description">I am a software engineer with background in web and desktop application, along with systems development</p>
-        <hr>
-        <p>Some of the technologies I have used recently:</p>
-        <ul class= "technologies icons no-list">
-          <li><a href=""><img alt="java-icon" src="/images/icons/java.svg"></a></li>
-          <li><a href=""></a><img alt="spring-icon" src="/images/icons/spring.svg"></a></li>
-          <li><a href=""></a><img alt="mysql-icon" src="/images/icons/mysql.svg"></a></li>
-          <li><a href=""></a><img alt="angular-icon" src="/images/icons/angular.svg"></a></li>
-          <li><a href=""></a><img alt="nodejs-icon" src="/images/icons/nodejs.svg"></a></li>
-          <li><a href=""></a><img alt="mongodb-icon" src="/images/icons/mongodb.svg"></a></li>
-        </ul>
-        <div class="button">
-          <p>Contact Me</p>
+        <div class="greeting">
+          <p>Hello. I am</p>
+          <h1 id="name">Dawit Woldegiorgis</h1>
+          <p class="description">I am a <em>software engineer</em> with background in web and desktop application, along with systems development</p>
         </div>
+        <div class="technologies">
+          <p>Some of the technologies I have used recently:</p>
+          <ul class= "icons no-list">
+            <li><a href="https://www.oracle.com/java/technologies/java-ee-glance.html"><img alt="java-icon" src="/images/icons/java.svg"></a></li>
+            <li><a href="https://spring.io"><img alt="spring-icon" src="/images/icons/spring.svg"></a></li>
+            <li><a href="https://www.mysql.com"><img alt="mysql-icon" src="/images/icons/mysql.svg"></a></li>
+            <li><a href="https://angular.io"><img alt="angular-icon" src="/images/icons/angular.svg"></a></li>
+            <li><a href="https://nodejs.org"><img alt="nodejs-icon" src="/images/icons/nodejs.svg"></a></li>
+            <li><a href="https://www.mongodb.com"><img alt="mongodb-icon" src="/images/icons/mongodb.svg"></a></li>
+          </ul>
+        </div>
+        <p class="button">Contact Me</p>
       </div>
     </section>
     <section id="about-me" class="about-me page">
       <h1>About me</h1>
       <div class="image">
-        <img class="profile-picture" src="/images/profile.png">
+        <img class="profile-picture" src="/images/profile.png" alt="profile picture">
       </div>
-      <div class="text">
-        <p>
-          I graduated with my Bachelors in Biology from the University of Florida.
-          <span id="detail-arrow-1" class="arrow"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="300" viewBox="0 0 300 300"><defs><clipPath id="a"><rect width="296" height="264"/></clipPath><clipPath id="c"><rect width="300" height="300"/></clipPath></defs><g id="b" clip-path="url(#c)"><g transform="translate(2 18)" clip-path="url(#a)"><path d="M139.136,0,278.272,213.953,139.136,85.385,0,213.953Z" transform="translate(287.136 238.977) rotate(180)" fill="#434343"/></g></g></svg></span>
-          <span id="detail-1" class="detail hide">
-            It was during this time I got introduced to the world of computer science. 
-            Having taken my first programming course, I was deeply intrigued and excited. 
-            I decided to learn more, so I added it as my minor.
-          </span>
-        </p>        
-        </p>
-          Please don't lie!!!! Working in a business, however, was more rewarding that I expected.
-          <span id="detail-arrow-2" class="arrow"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="300" viewBox="0 0 300 300"><defs><clipPath id="a"><rect width="296" height="264"/></clipPath><clipPath id="c"><rect width="300" height="300"/></clipPath></defs><g id="b" clip-path="url(#c)"><g transform="translate(2 18)" clip-path="url(#a)"><path d="M139.136,0,278.272,213.953,139.136,85.385,0,213.953Z" transform="translate(287.136 238.977) rotate(180)" fill="#434343"/></g></g></svg></span>
-          <span id="detail-2" class="detail hide">
-            It gave me a great insight into how to handle working in teams, understanding different personalities and improving my accountability.
-            During this time, I kept working on learning and developing apps.
-            The more I spent time doing that, the clearer it became to me where I wanted my life to head. I found my passion. 
-          </span>
-        </p>
-        <p>
-          I enrolled for my masters to get a little bit more formal education before diving into the industry. 
-          <span id="detail-arrow-3" class="arrow"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="300" viewBox="0 0 300 300"><defs><clipPath id="a"><rect width="296" height="264"/></clipPath><clipPath id="c"><rect width="300" height="300"/></clipPath></defs><g id="b" clip-path="url(#c)"><g transform="translate(2 18)" clip-path="url(#a)"><path d="M139.136,0,278.272,213.953,139.136,85.385,0,213.953Z" transform="translate(287.136 238.977) rotate(180)" fill="#434343"/></g></g></svg></span>
-          <span id="detail-3" class="detail 1 hide">
-            I learnt about design and architecture of enterprise systems, building interactive web applications, and writing clean testable code to streamline the software development process.
-          </span>
-        </p>
-        <p>This is where my real journey begins.</p> 
+      <div class="about">
+        <section class="about">
+          <h2><em>Who</em> I am</h2>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>  
+        </section>        
+        <section class="what">
+          <h2><em>What</em> I do</h2>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>  
+        </section>
+        <section class="when">
+          <h2><em>When</em> I did</h2>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>  
+        </section>
+        <section class="where">
+          <h2><em>Where</em> I go</h2>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>  
+        </section>
+        <section class="why">
+          <h2><em>Why</em> I do</h2>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>  
+        </section>
       </div>
+      <section class="hobbies">
+        <h2>Hobbies</h2>
+        <ul class="no-list">
+          <li>Video games</li>
+          <li>Cooking</li>
+          <li>Driving</li>
+          <li>Lounging</li>
+        </ul>
+      </section>
     </section>
     <section id="projects" class="projects page">
       <h1>Projects</h1>
@@ -101,10 +102,18 @@
           <h2>Text Adventure</h2>
           <img src="#" alt="text-adventure-logo">
           <p class="description">A simple console based adventure game implemented in Java. Online demo is re-implemented in Javascript</p>
-          <section class="technologies">
-            <h3>Technologies Used</h3>
-            <img src="#" alt="java-icon">
-            <img src="#" alt="html-css-js-icon">
+          <section class="links">
+            <div class="technologies">
+              <h3>Technologies Used</h3>
+              <ul class="no-list">
+                <li><a href="https://www.java.com"><img alt="java-icon" src="/images/icons/java.svg"></a></li>
+                <li><a href="#"><img src="#" alt="html-css-js-icon"></a></li>
+              </ul>
+            </div>
+            <div class="code">
+              <a href="#"><img src="/images/icons/code.png" alt="source-code-icon"></a>
+              <a href="#"><img src="/images/icons/demo.png" alt="live-link-icon"></a>
+            </div>
           </section>
         </article>
         <article id="dinner-plans">
@@ -152,20 +161,19 @@
       </div>
 
     </section>
-    <section class="page name">
-      <h1>Section title</h1>
-      <div>
-        Group contents
-      </div>
-      <div>
-        other group contents
+    <section class="contact">
+      <h1>Get in touch</h1>
+      <div class="info">
+        <p>phone: <span class="phone">(305) 951-4775</span></p>
+        <p>email: <span class="email">dawithwoldegiorgis@gmail.com</span></p>
       </div>
     </section>
-
-    <footer>
-      <!-- stuff at the bottom of page -->
-    </footer>
   </main>
+  <footer>
+    <!-- stuff at the bottom of page -->
+    <p>Designed and Built by Dawit Woldegiorgis</p>
+    <p>Copyright © 2020</p>
+  </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/script.js"></script>
 </body>

@@ -2,9 +2,8 @@ $(document).ready(function() {
 
     /* toggle mobile menu */
     function toggleMenu(){
-        $(".main-menu .links").slideToggle(200);
+        $(".page-links").slideToggle(200);
         $(".hamburger-icon").toggleClass("toggled");
-        $(".main-logo").toggleClass("toggled");
         console.log("clicked");
     }
 
@@ -23,13 +22,6 @@ $(document).ready(function() {
     $(".nav-list li").click(toggleMenu);
 
     $(".arrow").click(toggleDetails);
-
-    // var pages = ["home", "about-me", "projects", "contact"];
-    // var active = 0;
-    // $(document).scroll(() => {
-    //     console.log($("." + pages[active]))
-    //     console.log($($(".main-container").position()));
-    // })
     
 });
 
