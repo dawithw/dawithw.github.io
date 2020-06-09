@@ -2,9 +2,11 @@ $(document).ready(function() {
 
     /* toggle mobile menu */
     function toggleMenu(){
-        $(".page-links").slideToggle(200);
+        $(".page-links").toggleClass("slide-toggle");
         $(".hamburger-icon").toggleClass("toggled");
-        console.log("clicked");
+        if(document.documentElement.clientWidth < 750) {
+            $(".slide-toggle").slideToggle(200);
+        }
     }
 
     function toggleDetails(event) {
@@ -18,10 +20,14 @@ $(document).ready(function() {
         $("#detail-" + arrowNumber).toggleClass("hide");
     }
 
+    function highlight() {
+        $($(this).children()[0]).toggleClass("highlight");
+    };
+
     $(".hamburger-icon").click(toggleMenu);
     $(".nav-list li").click(toggleMenu);
 
     $(".arrow").click(toggleDetails);
-    
+    $(".social-media svg").hover(highlight);
 });
 

@@ -116,6 +116,7 @@ a {
     background-color: #444;
 }
 
+
 .social-media {
     display: flex;
     width: 150px;
@@ -132,6 +133,10 @@ a {
 /* social media icon colors */
 svg path {
     fill:#aaa;
+}
+
+.highlight {
+    fill: #fff;
 }
 
 .main-container {
@@ -158,20 +163,8 @@ svg path {
 }
 
 .page > * {
-    /* border: 1px solid white; */
     margin: 20px 0;
 }
-
-/* .page::after{ 
-    content:"";
-    display: block;
-    width: 100%;
-    height: 1px;
-    background-color: #8a743d;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-} */
 
 .main {
     margin-top: max(0px, calc(50vh - 247px));
@@ -272,7 +265,7 @@ h1:not(.name)  {
     margin: auto;
 }
 
-.about-me img {
+.profile-picture img {
     width: 200px;
     border-radius: 50%;
     border: 3px solid #b18a2c;
@@ -318,6 +311,11 @@ div.about, section.hobbies, .contact, #projects article {
     height: 50vw;
     margin-bottom: 10px;
     background-color: black;
+}
+
+#projects > h2 {
+    font-size: 14px;
+    margin-top: -10px;
 }
 
 #projects article > h2 {
@@ -389,4 +387,106 @@ footer {
     background-color: black;
     text-align: center;
     font-size: 10px;
+}
+
+@media screen and (min-width: 600px) {
+    section.about-me {
+        display: grid;
+        grid-template-rows: auto auto auto auto auto;
+        column-gap: 50px;
+        overflow: scroll;
+    }
+
+    .about {
+        grid-row: 2/5;
+    }
+
+    .about-me h1 {
+        height: 60px;
+    }
+
+    .profile-picture img {
+        border-radius: 0;
+        border-width: 1px;
+        min-width: 30vw;
+    }
+
+    #projects article {
+        max-width: 450px;
+    }
+
+    #projects .code {
+        display: flex;
+        height: 30px;
+        margin-top: 20px;
+    }
+
+    .contact {
+        max-width: 470px;
+        margin: 10px auto 30px;
+    }
+
+    .main-container {
+        margin: 0 5vw;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    /* .hide-mobile {
+        display: none;
+    } */
+
+    .hide-desktop {
+        display: none;
+    }
+
+    .toggled {
+        position: unset;
+        z-index: unset;
+    }
+
+    .page-links {
+        display: block;
+        width: initial;
+        height: initial;
+        position: unset;
+        background-color: unset;
+        line-height: initial;
+    }
+
+    .nav-list::before {
+        display: none;
+    }
+
+    .nav-list {
+        display: flex;
+        width: fit-content;
+        margin: auto;
+    }
+    
+    .nav-list li {
+        width: 100px;
+        border: 0;
+    }
+
+    .nav-list li:hover {
+        background-color: unset;
+    }
+
+    .social-media {
+        position: fixed;
+        display: block;
+        left: 0;
+        top: 75vh;
+        width: initial;
+        margin-left: 2vw;
+    }
+
+    .social-media li {
+        margin-bottom: 10px;
+    }
+
+    .social-media svg {
+        width: 25px;
+    }
 }
