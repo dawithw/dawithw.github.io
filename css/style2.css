@@ -1,0 +1,268 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    color: #ccbb97;
+    font-family: sans-serif; 
+    font-size: 14px;
+    background-color: #000;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    background: #000;
+    opacity: 100%;
+    z-index: 2;
+}
+
+.main-logo {
+    width: 32px;
+    content: url("/images/logo.png");
+}
+
+.main-logo:hover {
+    content: url("/images/logo-bright.png");
+}
+
+.no-list {
+    padding: 0;
+    list-style: none;
+    display: block;
+}
+
+/* menu icon lines */
+.hamburger-icon div {
+    background-color: white;
+    height: 2px;
+    width: 32px;
+    margin: 7px 0;
+    border-radius: 20px;
+}
+
+.hamburger-icon {
+    right: 0;
+    content: url("/images/hamburger.png");
+    width: 32px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+}
+
+.page-links {
+    position: absolute;
+    right: 0;
+    top: 77px;
+    width: 100%;
+    height: 350px;
+    text-align: center;
+    background-color: #050505;
+    padding-bottom: 10px;
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+.nav-list li {
+    border-bottom: 1px solid #111;
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.nav-list li:hover { 
+    color: #fff;
+}
+
+.social-media {
+    display: inline flex;
+}
+
+.social-media svg {
+    width: 25px;
+    padding: 0 10px;
+}
+
+.main-container {
+    padding-top: 74px;
+    text-align: center;
+    background-color: #080801;
+}
+
+.main-container > section {
+    padding: 10px 10px 40px;
+}
+
+.home {
+    min-height: max(calc(100vh - 74px), 400px);
+}
+
+#name {
+    font-size: 46px;
+    margin: 0;
+}
+
+#name, h1, .description em {
+    color: #ffd900;
+}
+
+em {
+    font-style: normal;
+}
+
+.home .technologies {
+    margin: 40px 0;
+}
+
+.home .technologies .icons {
+    width: 300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.home .technologies img {
+    width: 48px;
+}
+
+.button {
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 10px 20px;
+    display: inline;
+}
+
+.button:hover {
+    background-color: #ffd900;
+    color: #222;
+}
+
+
+h1 {
+    font-size: 32px;
+}
+
+.profile-picture img {
+    border: 2px solid #332;
+    max-width: 50%;
+}
+
+.about {
+    text-align: left;
+    padding: 40px;
+}
+
+.about section {
+    border-bottom: 1px solid;
+    padding-bottom: 20px;
+}
+
+.about h2 {
+    margin-top: 40px;
+}
+
+
+.projects > h2 {
+    font-size: 16px;
+}
+
+article {
+    margin: 30px 0;
+    border: 1px solid #444;
+    position: relative;
+    width: 80vw;
+    height: 300px;
+    margin: 40px auto;
+    text-align: left;
+}
+
+article * {
+    margin: 0;
+}
+
+article > img {
+    display: block;
+    width: 100%;
+    height: 60%;
+    top: 0;
+    left: 0;
+}
+
+article h2 {
+    padding: 10px;
+    height: calc(60% - 10px);
+    width: calc(100% - 20px);
+    color: #fff;
+    font-size: 45px;
+    position: absolute;
+    left: 10px;
+    background-color: rgba(0,0,0,.4);
+    top: 0;
+    left: 0;
+
+}
+
+article .links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+article p, article .links {
+    padding: 10px 10px 0;
+}
+
+article .technologies ul {
+    display: flex;
+}
+
+article .links img {
+    margin: 5px 10px 5px 0;
+    width: 32px;
+}
+
+article h3 {
+    color: #776d58;
+    font-weight: lighter;
+    font-size: smaller;
+}
+
+footer {
+    padding: 20px 0;
+    text-align: center;
+    fon
+}
+
+footer * {
+    margin: 5px 0;
+}
+
+#contact {
+    margin: 20px auto;
+    color: #aaa;
+}
+
+#contact h1 {
+    font-size: 14px;
+    color: unset;
+}
+
+#contact .info span {
+    color: #777;
+}
+
+footer > p {
+    color: #444;
+    font-size: 10px;
+}

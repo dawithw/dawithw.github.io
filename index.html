@@ -5,22 +5,18 @@
   <meta name="description" content="Dawit Woldegiorgis is a software engineer with extensive background">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
   <title>Dawit Woldegiorgis</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style2.css">
 </head>
 <!-- class for styling selector -->
 <body>
   <header>
     <nav>
-      <img class="main-logo" src="images/logo.svg" alt="logo">
+      <a class="main-logo" href="#home">logo</a>
       <div class="main-menu">
         <!-- for creating -->
-        <div class="hamburger-icon hide-desktop">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-        <div class="page-links">
-          <ul class="nav-list no-list show-desktop">
+        <div class="hamburger-icon"></div>
+        <div class="page-links hide-mobile">
+          <ul class="nav-list no-list">
             <li><a href="#home">Home</a></li>
             <li><a href="#about-me">About Me</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -46,15 +42,15 @@
         <div class="technologies">
           <p>Some of the technologies I have used recently:</p>
           <ul class= "icons no-list">
-            <li><a href="https://www.oracle.com/java/technologies/java-ee-glance.html"><img alt="java-icon" src="/images/icons/java.svg"></a></li>
-            <li><a href="https://spring.io"><img alt="spring-icon" src="/images/icons/spring.svg"></a></li>
-            <li><a href="https://www.mysql.com"><img alt="mysql-icon" src="/images/icons/mysql.svg"></a></li>
-            <li><a href="https://angular.io"><img alt="angular-icon" src="/images/icons/angular.svg"></a></li>
-            <li><a href="https://nodejs.org"><img alt="nodejs-icon" src="/images/icons/nodejs.svg"></a></li>
-            <li><a href="https://www.mongodb.com"><img alt="mongodb-icon" src="/images/icons/mongodb.svg"></a></li>
+            <li><img alt="java-icon" src="/images/icons/java.svg"></li>
+            <li><img alt="spring-icon" src="/images/icons/spring.svg"></li>
+            <li><img alt="mysql-icon" src="/images/icons/mysql.svg"></li>
+            <li><img alt="angular-icon" src="/images/icons/angular.svg"></li>
+            <li><img alt="nodejs-icon" src="/images/icons/nodejs.svg"></li>
+            <li><img alt="mongodb-icon" src="/images/icons/mongodb.svg"></li>
           </ul>
         </div>
-        <p class="button">Contact Me</p>
+        <p class="button"><a href="mailto:dawithwoldegiorgis@gmail.com">Contact Me</a></p>
       </div>
     </section>
     <section id="about-me" class="about-me page">
@@ -63,52 +59,37 @@
         <img src="/images/profile.png" alt="profile picture">
       </div>
       <div class="about">
-        <section class="about">
-          <h2><em>Who</em> I am</h2>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>  
+        <section class="who">
+          <h2>Who I am</h2>
+          <p>I am a deep thinker, who happens to be a software engineer. As you may have guessed already, my name is Dawit Woldegiorgis. This is why I find it challenging to answer the question of who I am. My identity is constantly evolving. </p>  
         </section>        
         <section class="what">
-          <h2><em>What</em> I do</h2>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>  
+          <h2>What I do</h2>
+          <p>Lately I have been developing full-stack web applications in Java and Javascript. I'm more focused on developing enterprise systems, but I also enjoy building interactive user facing applications. Check out my projects to see some of the things I've built.</p>  
         </section>
         <section class="when">
-          <h2><em>When</em> I did</h2>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>  
+          <h2>My qualifications</h2>
+          <p>I graduated with minor in Computer Science from the University of Florida. Afterwards, I wanted to get more indepth knowledge, and some practical experience, so I enrolled for my Master's in Computer Science at the Maharishi International University. Here, is where I got most of my functional skills. Design driven development, effective team work, understanding user requirements before jumping into implementation, and so much more. Of course, this is in addition to the plenty of latest technologies I used while working on my projects.</p>  
         </section>
-        <section class="where">
-          <h2><em>Where</em> I go</h2>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>  
-        </section>
-        <section class="why">
-          <h2><em>Why</em> I do</h2>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>  
+        <section class="hobbies">
+          <h2>Hobbies</h2>
+          <p>When I'm relaxing, you can find me either playing video games or cooking wild things at home. When I'm with friends, I enjoy playing billards fueled with beer.</p>
         </section>
       </div>
-      <section class="hobbies">
-        <h2>Hobbies</h2>
-        <ul class="no-list">
-          <li>Video games</li>
-          <li>Cooking</li>
-          <li>Driving</li>
-          <li>Lounging</li>
-        </ul>
-      </section>
     </section>
     <section id="projects" class="projects page">
       <h1>Projects</h1>
       <h2>Selected projects I have completed for my courses</h2>
       <div>
         <article id="proj1">
-          <h2>Project Title</h2>
-          <img src="#" alt="project-logo">
+          <h2>Text Adventure</h2>
+          <img src="/images/projects/text-adventure.png" alt="project-logo">
           <p class="description">A simple console based adventure game implemented in Java. Online demo is re-implemented in Javascript</p>
           <section class="links">
             <div class="technologies">
               <h3>Technologies Used</h3>
               <ul class="no-list">
-                <li><a href="#"><img alt="java-icon" src="/images/icons/java.svg"></a></li>
-                <li><a href="#"><img alt="angular-icon" src="/images/icons/angular.svg"></a></li>
-                <li><a href="#"><img alt="mysql-icon" src="/images/icons/mysql.svg"></a></li>
+                <li><img alt="java-icon" src="/images/icons/java.svg"></li>
               </ul>
             </div>
             <div class="code">
@@ -117,7 +98,7 @@
             </div>
           </section>
         </article>
-        <article id="proj2">
+        <article id="proj2" class="hide-desktop">
           <h2>Project Title</h2>
           <img src="#" alt="project-logo">
           <p class="description">A simple console based adventure game implemented in Java. Online demo is re-implemented in Javascript</p>
@@ -125,9 +106,9 @@
             <div class="technologies">
               <h3>Technologies Used</h3>
               <ul class="no-list">
-                <li><a href="#"><img alt="java-icon" src="/images/icons/java.svg"></a></li>
-                <li><a href="#"><img alt="angular-icon" src="/images/icons/angular.svg"></a></li>
-                <li><a href="#"><img alt="mysql-icon" src="/images/icons/mysql.svg"></a></li>
+                <li><img alt="java-icon" src="/images/icons/java.svg"></li>
+                <li><img alt="angular-icon" src="/images/icons/angular.svg"></li>
+                <li><img alt="mysql-icon" src="/images/icons/mysql.svg"></li>
               </ul>
             </div>
             <div class="code">
@@ -136,7 +117,7 @@
             </div>
           </section>
         </article>
-        <article id="proj3">
+        <article id="proj3" class="hide-desktop">
           <h2>Project Title</h2>
           <img src="#" alt="project-logo">
           <p class="description">A simple console based adventure game implemented in Java. Online demo is re-implemented in Javascript</p>
@@ -144,9 +125,9 @@
             <div class="technologies">
               <h3>Technologies Used</h3>
               <ul class="no-list">
-                <li><a href="#"><img alt="java-icon" src="/images/icons/java.svg"></a></li>
-                <li><a href="#"><img alt="angular-icon" src="/images/icons/angular.svg"></a></li>
-                <li><a href="#"><img alt="mysql-icon" src="/images/icons/mysql.svg"></a></li>
+                <li><img alt="java-icon" src="/images/icons/java.svg"></li>
+                <li><img alt="angular-icon" src="/images/icons/angular.svg"></li>
+                <li><img alt="mysql-icon" src="/images/icons/mysql.svg"></li>
               </ul>
             </div>
             <div class="code">
@@ -156,18 +137,19 @@
           </section>
         </article>
       </div>
-
     </section>
-    <section class="contact">
+  </main>
+  <footer>
+    <!-- contact info -->
+    <section id="contact" class="contact">
       <h1>Get in touch</h1>
       <div class="info">
         <p>phone: <span class="phone">(305) 951-4775</span></p>
         <p>email: <span class="email">dawithwoldegiorgis@gmail.com</span></p>
       </div>
     </section>
-  </main>
-  <footer>
-    <!-- stuff at the bottom of page -->
+
+    <!-- copyright notice -->
     <p>Designed and Built by Dawit Woldegiorgis</p>
     <p>Copyright © 2020</p>
   </footer>
