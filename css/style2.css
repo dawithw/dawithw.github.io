@@ -2,10 +2,10 @@ body {
     margin: 0;
     padding: 0;
     overflow: visible;
-    color: #ccbb97;
-    font-family: sans-serif; 
-    font-size: 14px;
-    background-color: #000;
+    color: #bbb;
+    font-family: 'Montserrat', 'Open Sans', Verdana, Tahoma, sans-serif; 
+    font-size: 4vw;
+    background-color: #333;
 }
 
 header {
@@ -16,11 +16,20 @@ header {
     background: #000;
     opacity: 100%;
     z-index: 2;
+    box-shadow: 0 5px 5px #111;
 }
 
 .main-logo {
-    width: 32px;
     content: url("/images/logo.png");
+}
+
+.hamburger-icon {
+    right: 0;
+    content: url("/images/hamburger.png");
+}
+
+.main-logo, .hamburger-icon {
+    height: 30px;
 }
 
 .main-logo:hover {
@@ -33,37 +42,23 @@ header {
     display: block;
 }
 
-/* menu icon lines */
-.hamburger-icon div {
-    background-color: white;
-    height: 2px;
-    width: 32px;
-    margin: 7px 0;
-    border-radius: 20px;
-}
-
-.hamburger-icon {
-    right: 0;
-    content: url("/images/hamburger.png");
-    width: 32px;
-}
-
 nav {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 20px;
+    padding: 15px;
 }
 
 .page-links {
     position: absolute;
     right: 0;
-    top: 77px;
+    top: 60px;
     width: 100%;
-    height: 350px;
+    height: 300px;
     text-align: center;
-    background-color: #050505;
+    background-color: #101012;
     padding-bottom: 10px;
+    box-shadow: 0 5px 5px #111;
     display: none;
 }
 
@@ -72,16 +67,25 @@ a {
     color: unset;
 }
 
+.nav-list {
+    margin-top: 0;
+}
+
+.nav-list a {
+    display: block;
+}
+
 .nav-list li {
-    border-bottom: 1px solid #111;
+    border-bottom: 1px solid #222;
     padding: 10px 0;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 5vw;
     font-weight: lighter;
 }
 
 .nav-list li:hover { 
     color: #fff;
+    background-color: #222;
 }
 
 .social-media {
@@ -89,31 +93,57 @@ a {
 }
 
 .social-media svg {
-    width: 25px;
+    width: 30px;
+    height: 50px;
     padding: 0 10px;
 }
 
+/* svg color */
+.social-media g {
+    stroke: #bbb;
+}
+
+.social-media path {
+    fill: #bbb;
+}
+
 .main-container {
-    padding-top: 74px;
+    padding-top: 60px;
     text-align: center;
-    background-color: #080801;
+    background-color: #222;
 }
 
-.main-container > section {
-    padding: 10px 10px 40px;
+.main-container > section > *:first-child {
+    padding-top: 40px;
+}
+.main-container > section > *:last-child {
+    padding-bottom: 40px;
 }
 
-.home {
-    min-height: max(calc(100vh - 74px), 400px);
+.card {
+    width: calc(100vw);
+    background-image: url('/images/texture-1.png');
+    background-size: auto;
+    background-repeat: no-repeat;
 }
+
+.main {
+    padding: 0 20px;
+}
+
+.greeting > *:first-child {
+    margin-top: 0;
+}
+
 
 #name {
-    font-size: 46px;
+    font-family: 'Orbitron', Verdana, Tahoma, sans-serif;
+    font-size: 9vw;
     margin: 0;
 }
 
-#name, h1, .description em {
-    color: #ffd900;
+#name, .description em {
+    color: #BB8F36;
 }
 
 em {
@@ -125,7 +155,7 @@ em {
 }
 
 .home .technologies .icons {
-    width: 300px;
+    width: calc(100vw - 40px);
     margin: auto;
     display: flex;
     justify-content: space-evenly;
@@ -133,136 +163,476 @@ em {
 }
 
 .home .technologies img {
-    width: 48px;
+    width: 10vw;
 }
 
 .button {
+    display: block;
     border: 1px solid;
-    border-radius: 20px;
+    border-radius: 10vw;
     padding: 10px 20px;
-    display: inline;
+    width: 30vw;
+    margin: 20px auto;
 }
 
-.button:hover {
-    background-color: #ffd900;
-    color: #222;
+.button-fill {
+    background: linear-gradient(100deg, #D9A125 30%, #F1B92B 50%, #D9A125 90%);
+    color: #000;
 }
 
 
 h1 {
-    font-size: 32px;
+    font-size: 7vw;
+    margin: 0;
+    color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.profile-picture {
+    margin: 20px 0;
 }
 
 .profile-picture img {
-    border: 2px solid #332;
+    border: 2px solid #222;
     max-width: 50%;
 }
 
+#about-me {
+    background-color: #0f0e0b;
+}
 .about {
     text-align: left;
-    padding: 40px;
+    margin: 0 40px;
 }
 
 .about section {
-    border-bottom: 1px solid;
-    padding-bottom: 20px;
+    border-bottom: 1px solid #444;
+    padding: 20px 0;
+}
+
+.about section:last-child {
+    border-bottom: 0px;
 }
 
 .about h2 {
-    margin-top: 40px;
+    text-transform: uppercase;
+    font-size: 3.5vw;
+    letter-spacing: 2px;
 }
 
+#projects {
+    background-color: #34383D;
+}
 
 .projects > h2 {
-    font-size: 16px;
+    font-size: 4vw;
+    font-weight: normal;
 }
 
 article {
-    margin: 30px 0;
-    border: 1px solid #444;
-    position: relative;
-    width: 80vw;
-    height: 300px;
     margin: 40px auto;
+    background: #26272B;
+    width: 65vw;
+    padding: 30px;
     text-align: left;
+    box-shadow: -5px 5px 20px #000;
 }
 
 article * {
     margin: 0;
 }
 
+article h2, article p {
+    margin: 10px 0;
+}
+
+article h3 {
+    font-weight: lighter;
+    font-size: unset;
+}
+
+article .technologies {
+    margin: 20px 0;
+}
+
 article > img {
-    display: block;
-    width: 100%;
-    height: 60%;
-    top: 0;
-    left: 0;
-}
-
-article h2 {
-    padding: 10px;
-    height: calc(60% - 10px);
-    width: calc(100% - 20px);
-    color: #fff;
-    font-size: 45px;
-    position: absolute;
-    left: 10px;
-    background-color: rgba(0,0,0,.4);
-    top: 0;
-    left: 0;
-
-}
-
-article .links {
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-between;
-}
-
-article p, article .links {
-    padding: 10px 10px 0;
+    display: none;
 }
 
 article .technologies ul {
     display: flex;
+    margin: 10px 0;
 }
 
-article .links img {
-    margin: 5px 10px 5px 0;
-    width: 32px;
+article img {
+    margin: 0 10px 0 0;
+    width: 10vw;
 }
 
-article h3 {
-    color: #776d58;
-    font-weight: lighter;
-    font-size: smaller;
+article .links {
+    display: flex;
+    justify-content: space-between;
 }
+
+article a {
+    border: 1px solid;
+    border-color: #333 #222 #333 #444;
+    border-radius: 100%;
+    background-color: #222;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+
+#contact * {
+    color: #ac9f6d;
+    fill: #ac9f6d;
+}
+
+#contact .card {
+    text-align: left;
+    margin: auto;
+    width: 80%;
+    padding: 10%;
+    background-image: url(/images/texture-2.png);
+    background-size: cover;
+}
+
+#contact h1 {
+    font-size: 4vw;
+    letter-spacing: 10px;
+    margin-bottom: 10px;
+}
+
+#contact svg {
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin-right: 10px;
+}
+
+#contact p {
+    margin: 5px;
+    font-size: 3vw;
+}
+
 
 footer {
     padding: 20px 0;
     text-align: center;
-    fon
+    background-color: #000;
 }
 
 footer * {
     margin: 5px 0;
 }
 
-#contact {
-    margin: 20px auto;
-    color: #aaa;
-}
-
-#contact h1 {
-    font-size: 14px;
-    color: unset;
-}
-
-#contact .info span {
-    color: #777;
-}
-
 footer > p {
-    color: #444;
+    color: #777;
     font-size: 10px;
 }
+
+/* custom gradients */
+.gold {
+    background: linear-gradient(90deg, #724A15 10%,#D1A640);
+}
+
+.gold2 {
+    background: linear-gradient(90deg, #d1a82e 10%,#e9e0ae);
+}
+
+.yellow {
+    background: linear-gradient(25deg, #8E6621 10%, #C28820 20%, #D9A125 30%, #F1B92B 50%, #F6CC3C 60%,#F7D85E 90%);
+}
+
+/* keep below color gradients */
+.text-fill {
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+@media only screen and (min-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .nav-list li {
+        font-size: 24px;
+    }
+
+    .main {
+        width: 460px;
+        margin: auto;
+    }
+
+    #name {
+        font-size: 48px;
+    }
+
+    h1 {
+        font-size: 34px;
+
+    }
+
+    .home .technologies .icons {
+        width: 440px;
+    }
+    
+    .home .technologies img {
+        width: 54px;
+    }
+
+    .about h2 {
+        font-size: 16px;
+    }
+
+    .projects > h2 {
+        font-size: 18px;
+    }
+    
+
+    #contact .card {
+        text-align: left;
+        margin: auto;
+        padding: 10%;
+    }
+
+    #contact h1 {
+        font-size: 19px;
+    }
+
+    #contact p {
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (min-width: 600px) {
+
+    .card {
+        width: 100vw;
+    }
+
+    .main {
+        padding: calc(min(50vw,calc(50vh - 30px)) - 247px);
+    }
+
+    #contact h1 {
+        margin-bottom: 15px;
+    }
+
+    article img {
+        width: 36px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    #home {
+        background-color: #222;
+        padding: calc(50vh - 384px) 0px;
+    }
+
+    #home .card {
+        padding: 0;
+    }
+
+    .hamburger-icon {
+        display: none;
+    }
+
+    .page-links {
+        position: initial;
+        right: 0;
+        top: 60px;
+        width: 60vw;
+        height: unset;
+        text-align: center;
+        padding-bottom: initial;
+        display: block;
+    }
+
+    .nav-list {
+        margin: 5px 0 0;
+    }
+
+    nav, #about-me .content {
+        max-width: 768px;
+        margin: auto;
+    }
+    
+    .nav-list a {
+        display: initial;
+    }
+    
+    .nav-list li {
+        border-bottom: unset;
+        font-size: 18px;
+        padding: 0;
+    }
+
+    .nav-list li:hover {
+        border-bottom: 1px solid #fff;
+        padding-bottom: 2px;
+        background-color: unset;
+        color: #fff;
+    }
+
+    .nav-list {
+        display: flex;
+        justify-content: space-between;
+        width: 450px;
+    }
+
+    .page-links {
+        background-color: unset;
+        box-shadow: unset;
+        width: unset;
+    }
+
+    .social-media {
+        left: 10px;
+        bottom: 80px;
+        position: fixed;
+        display: block;
+    }
+
+    .social-media li {
+        height: 50px;
+    }
+    
+    .card {
+        width: 768px;
+        height: 708px;
+        margin: auto;
+        box-shadow: -10px 5px 40px #000;
+    }
+
+    .main {
+        padding: 107px;
+    }
+
+    .button {
+        width: 120px;
+    }
+
+    .about {
+        max-width: 720px;
+        margin: auto;
+    }
+
+    .profile-picture, .about {
+        margin-top: 40px;
+    }
+
+    article {
+        padding: 40px 60px;
+        margin: 60px auto;
+        max-width: 600px;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: 30px 70px;
+    }
+
+    article > * {
+        grid-column: 1/1;
+        margin: 0 !important;
+    }
+
+    article .technologies {
+        padding: 10px 0 0 10px;
+    }
+
+    article .links {
+        grid-column: 2/2;
+        grid-row: 3/3;
+        display: block;
+        text-align: right;
+    }
+
+    article a {
+        display: block;
+        border-radius: 0px 25px;
+        height: unset;
+        padding: 10px 30px;
+        line-height: unset;
+        margin: auto;
+    }
+
+    article a, article .technologies {
+        border: 2px solid;
+        border-color: #222 #222 #333 #333;
+        background-color: #222;
+    }
+
+    article a:first-child {
+        margin-bottom: 10px;
+    }
+
+
+    #contact {
+        height: 380px;
+    }
+
+    #contact .card {
+        text-align: left;
+        margin: auto;
+        width: 400px;
+        height: unset;
+        padding: 60px;
+        box-shadow: -5px 5px 5px #000;
+        rotate: calc(-5deg);
+        margin-top: 100px;
+    }
+
+}
+
+@media only screen and ( min-width: 1024px) {
+
+    #about-me .content {
+        text-align: left;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        padding: 80px 0;
+    }
+
+    .main-menu {
+        max-width: 80%;
+    }
+
+    .nav-list {
+        position: unset;
+    }
+
+    #about-me h1 {
+        padding: 0;
+        grid-row: 1/1;
+    }
+    
+    .profile-picture {
+       grid-column: 2/2;
+       grid-row: 1/3;
+    }
+
+    .profile-picture img {
+        max-width: 100%;
+    }
+
+    .about {
+        grid-row: 2/2;
+    }
+
+    #about-me h1, .profile-picture, .about {
+        margin: 0;
+        padding: 0 40px;
+    }
+
+    nav, #about-me .content {
+        margin: auto;
+    }
+}
+
