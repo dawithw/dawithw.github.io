@@ -85,7 +85,9 @@ a {
 }
 
 .social-media {
-    display: inline flex;
+    display: flex;
+    width: 150px;
+    margin: auto;
 }
 
 .social-media svg {
