@@ -585,7 +585,8 @@ footer > p {
         height: unset;
         padding: 60px;
         box-shadow: -5px 5px 5px #000;
-        rotate: calc(-5deg);
+        -webkit-transform: rotate(-5deg);
+        transform: rotate(-5deg);
         margin-top: 100px;
     }
 
