@@ -32,10 +32,6 @@ header {
     height: 30px;
 }
 
-.main-logo:hover {
-    content: url("/images/logo-bright.png");
-}
-
 .no-list {
     padding: 0;
     list-style: none;
@@ -122,7 +118,7 @@ a {
 
 .card {
     width: calc(100vw);
-    background-image: url('/images/texture-1.png');
+    background-image: url('/images/texture-1.jpg');
     background-size: auto;
     background-repeat: no-repeat;
 }
@@ -296,7 +292,7 @@ article a {
     margin: auto;
     width: 80%;
     padding: 10%;
-    background-image: url(/images/texture-2.png);
+    background-image: url('/images/texture-2.jpg');
     background-size: cover;
 }
 
@@ -627,7 +623,7 @@ footer > p {
         grid-row: 2/2;
     }
 
-    #about-me h1, .profile-picture, .about {
+    #about-me h1, .about {
         margin: 0;
         padding: 0 40px;
     }
